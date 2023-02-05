@@ -1,0 +1,121 @@
+:root{
+        --headercolor: #13293d;
+        --headercolorhover: #005850;
+        --bodycolor:#fff;
+        --headerfontcolor: #f0f0f0;
+        --bodyfontcolor: #054861;
+    
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: var(--bodycolor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+header{
+    background-image: radial-gradient(circle, #054861 0%, #13293d 100%);
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+header img{
+    max-width: 15rem;
+    max-height: 15rem;
+    margin: 2% 1%;
+    border-radius: 50% !important;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0.25rem solid var(--headerfontcolor);
+    vertical-align:middle;
+}
+main img{
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: 1%;
+    border-radius: 50% !important;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0.25rem solid var(--bodycolor);
+    vertical-align:middle;
+}
+
+header .socials{
+    display: flex;
+    flex-direction: row;
+}
+
+header .socials a{
+    text-transform: none;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: .5rem .5rem 0 .5rem;
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    color: var(--headerfontcolor);
+}
+
+header .socials a:hover{
+    color: var(--headercolorhover);
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+main .card-itens{
+    margin: .5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+main .card p::selection, main .card-itens h2::selection, main .card-itens h3::selection, main .card-itens h4::selection, main .card-itens h5::selection, main .card-itens i::selection, main .card a::selection{
+    background: var(--headercolorhover);
+    color: var(--headerfontcolor);
+}
+
+main .card-itens:last-of-type{
+    border: none;
+}
+
+main .competencias{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    margin: .5rem;
+    padding: .5rem;
+    border-bottom:1px dashed var(--border);
+}
+
+h6:not(.from-to){
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1140px){
+    
+}
+@media screen and (min-width:600px) and (max-width: 1140px){
+   
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 100vw;
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 300px){
+    #aside-main{
+        flex-direction: row;
+    }
+}
