@@ -1,15 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/code-new-roman-2');
 :root{
         --headercolor: #13293d;
-        --headercolorhover: #005850;
-        --bodycolor:#fff;
+        --headercolorhover: #069b8e;
+        --bodycolor:#171515;
         --headerfontcolor: #f0f0f0;
-        --bodyfontcolor: #054861;
+        --bodyfontcolor: #e2e2e2;
     
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     font-size: 1rem;
     font-weight: normal;
     background-color: var(--bodycolor);
-}
+}              
 *{
     margin: 0;
     padding: 0;
@@ -23,11 +24,37 @@ header{
     color: #fff;
 }
 
+body, .accordion{
+    background-color: var(--bodycolor);
+    color: var(--bodyfontcolor);
+}
+
+.accordion-item{
+    border: 1.5px solid #222;
+    background-color: var(--bodycolor);
+    color: var(--bodyfontcolor);
+}
+
+.accordion-button, .accordion-button:focus, .accordion-button:not(.collapsed){
+    background-color: #222;
+    color: var(--bodyfontcolor);
+}
+
+h1{
+    font-family: 'Code New Roman', sans-serif;
+}
+
+h5{
+    background-color: #191919;
+}
+
 footer{
     width: 100%;
     position: relative;
     bottom: 0;
     margin-bottom: 0;
+    background-color: var(--bodycolor);
+    color: var(--bodyfontcolor);
 }
 
 header img{
@@ -59,8 +86,15 @@ header .socials{
 header .socials a{
     text-transform: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: .5rem .5rem 0 .5rem;
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    color: var(--headerfontcolor);
+}
+body #aside-main a{
+    font-size: 1rem;
+    text-transform: none;
+    text-decoration: none;
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     color: var(--headerfontcolor);
 }
@@ -98,6 +132,10 @@ main .competencias{
 
 h6:not(.from-to){
     font-weight: 400;
+}
+
+p.badge{
+    background-color: var(--headercolor);
 }
 
 @media screen and (min-width: 1140px){
