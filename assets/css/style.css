@@ -1,9 +1,9 @@
 :root{
         --headercolor: #13293d;
         --headercolorhover: #005850;
-        --bodycolor:#fff;
+        --bodycolor:#171515;
         --headerfontcolor: #f0f0f0;
-        --bodyfontcolor: #054861;
+        --bodyfontcolor: #fff;
     
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     font-size: 1rem;
