@@ -41,7 +41,8 @@ body, .accordion{
     color: var(--bodyfontcolor);
 }
 .accordion-button:focus, .accordion-button:not(.collapsed){
-    background-color: var(--headercolorhover);
+    /* radial-gradient(circle, #054861 0%, #13293d 100%); */
+    background-color: #054861;
     color: var(--bodyfontcolor);
 }
 h1{
