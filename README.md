@@ -8,5 +8,5 @@ Projeto de aprimoramento da versão 1 de um website responsivo para currículo p
 
     Tecnologias utilizadas: HTML5, CSS3 e Bootstrap 4. 
 
- * Link para meu currículo pessoal desenvolvido: https://viniciusmartins.github.io
+ * Link para meu currículo pessoal desenvolvido: https://vinecunha.github.io
  * Link para minhas certificações disponíveis no portifólio: https://www.credly.com/users/vcmartins/badges
