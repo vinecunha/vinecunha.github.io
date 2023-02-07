@@ -21,7 +21,7 @@ html{scroll-behavior: smooth;}
 
 header{
     background-image: radial-gradient(circle, #054861 0%, #13293d 100%);
-    color: #fff;
+    color: var(--bodyfontcolor);
     border-bottom: .5rem solid #00000055;
 }
 
@@ -35,14 +35,12 @@ body, .accordion{
     background-color: var(--bodycolor);
     color: var(--bodyfontcolor);
 }
-
-.accordion-button, .accordion-collapse{
-    background-color: #222;
+.accordion-button,.accordion-collapse{
+    background-color: #22222299;
     color: var(--bodyfontcolor);
 }
 .accordion-button:focus, .accordion-button:not(.collapsed){
-    /* radial-gradient(circle, #054861 0%, #13293d 100%); */
-    background-color: #054861;
+    background-color: #222;
     color: var(--bodyfontcolor);
 }
 h1{
