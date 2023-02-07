@@ -22,6 +22,7 @@ html{scroll-behavior: smooth;}
 header{
     background-image: radial-gradient(circle, #054861 0%, #13293d 100%);
     color: #fff;
+    border-bottom: .5rem solid #00000055;
 }
 
 body, .accordion{
@@ -35,17 +36,20 @@ body, .accordion{
     color: var(--bodyfontcolor);
 }
 
-.accordion-button, .accordion-button:focus, .accordion-button:not(.collapsed){
+.accordion-button, .accordion-collapse{
     background-color: #222;
     color: var(--bodyfontcolor);
 }
-
+.accordion-button:focus, .accordion-button:not(.collapsed){
+    background-color: var(--headercolorhover);
+    color: var(--bodyfontcolor);
+}
 h1{
     font-family: 'Code New Roman', sans-serif;
 }
 
 h5{
-    background-color: #191919;
+    background-color: #19191977;
 }
 
 footer{
