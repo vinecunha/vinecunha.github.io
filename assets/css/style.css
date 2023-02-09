@@ -39,7 +39,7 @@ body{
     background-color: #22222299;
     color: var(--bodyfontcolor);
 }
-.accordion-button:focus, .accordion-button:not(.collapsed){
+.accordion-button:focus, .accordion-button:not(.collapsed),.modal-header,.modal-footer,.modal-body{
     background-color: #222;
     color: var(--bodyfontcolor);
 }
@@ -47,7 +47,7 @@ h1{
     font-family: 'Code New Roman', sans-serif;
 }
 
-h5{
+h5:not(.modal-title){
     background-color: #19191977;
 }
 
