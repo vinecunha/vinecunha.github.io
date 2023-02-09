@@ -137,8 +137,14 @@ h6:not(.from-to){
     font-weight: 400;
 }
 
-p.badge{
+button.hardskills{
     background-color: var(--headercolor);
+    color: var(--bodyfontcolor);
+    font-size: .8rem;
+}
+button.hardskills:hover{
+    color:var(--bodyfontcolor);
+    opacity: .85;
 }
 
 @media screen and (min-width: 1140px){
