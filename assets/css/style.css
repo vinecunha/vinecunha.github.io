@@ -118,9 +118,7 @@ main .card p::selection, main .card-itens h2::selection, main .card-itens h3::se
     color: var(--headerfontcolor);
 }
 
-main .card-itens:last-of-type{
-    border: none;
-}
+
 
 main .competencias{
     text-align: center;
@@ -147,7 +145,7 @@ button.hardskills:hover{
     opacity: .85;
 }
 
-@media screen and (min-width: 1140px){
+/* @media screen and (min-width: 1140px){
     
 }
 @media screen and (min-width:600px) and (max-width: 1140px){
@@ -162,7 +160,4 @@ button.hardskills:hover{
 }
 
 @media screen and (min-width: 200px) and (max-width: 300px){
-    #aside-main{
-        flex-direction: row;
-    }
-}
+} */
