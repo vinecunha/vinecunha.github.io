@@ -25,17 +25,17 @@ header{
     border-bottom: .5rem solid #00000055;
 }
 
-body, .accordion{
+body{
     background-color: var(--bodycolor);
     color: var(--bodyfontcolor);
 }
 
 .accordion-item{
     border: 1.5px solid #222;
-    background-color: var(--bodycolor);
+    background-color: #22222299;
     color: var(--bodyfontcolor);
 }
-.accordion-button,.accordion-collapse{
+.accordion-button, button.accordion-button::after,.accordion-collapse, button.collapsed::after{
     background-color: #22222299;
     color: var(--bodyfontcolor);
 }
