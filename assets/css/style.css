@@ -52,7 +52,8 @@ h5:not(.modal-title){
 }
 
 h3.send-email{
-    border-top: .3rem solid #05486188;
+    border-top: .3rem solid;
+    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 footer{
@@ -71,9 +72,10 @@ header img{
     border-radius: 50% !important;
     overflow: hidden;
     background-color: #fff;
-    border: 0.25rem solid var(--headerfontcolor);
+    border: 0.2rem solid var(--headerfontcolor);
     vertical-align:middle;
 }
+
 main img{
     max-width: 3rem;
     max-height: 3rem;

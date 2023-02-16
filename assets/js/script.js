@@ -77,5 +77,6 @@ document.getElementById('contact-form')
       alert.appendChild(alertErrorMsg);
 
       setTimeout(cleanAlert, 5000);
+      window.navigator.vibrate(500);
     });
 });
