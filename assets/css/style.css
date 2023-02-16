@@ -51,6 +51,10 @@ h5:not(.modal-title){
     background-color: #19191977;
 }
 
+h3.send-email{
+    border-top: .3rem solid #05486188;
+}
+
 footer{
     width: 100%;
     position: relative;
