@@ -1,8 +1,8 @@
-@import url('https://fonts.cdnfonts.com/css/code-new-roman-2');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo&family=Space+Grotesk&display=swap');
 :root{
         --headercolor: #13293d;
         --headercolorhover: #069b8e;
-        --bodycolor:#171515;
+        --bodycolor:#111;
         --headerfontcolor: #f0f0f0;
         --bodyfontcolor: #e2e2e2;
     
@@ -43,8 +43,13 @@ body{
     background-color: #222;
     color: var(--bodyfontcolor);
 }
-h1{
-    font-family: 'Code New Roman', sans-serif;
+
+.inputform{
+    background-color: #22222299;
+}
+
+h1,h4,legend{
+    font-family: 'Archivo', sans-serif;
 }
 
 h5:not(.modal-title){
@@ -52,8 +57,27 @@ h5:not(.modal-title){
 }
 
 h3.send-email{
+    font-family: "Archivo",sans-serif;
+}
+
+div#main-highlight{
+    border-bottom: .3rem solid;
+    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
+}
+
+section#sub-main{
+    background-color: #171515;
     border-top: .3rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
+}
+
+form button#button{
+    transition: background-color 1s;
+    transition-timing-function: ease-in-out;
+}
+
+form button#button:hover{
+    background-color: #054861;
 }
 
 footer{
@@ -124,8 +148,6 @@ main .card p::selection, main .card-itens h2::selection, main .card-itens h3::se
     color: var(--headerfontcolor);
 }
 
-
-
 main .competencias{
     text-align: center;
     display: flex;
@@ -149,6 +171,17 @@ button.hardskills{
 button.hardskills:hover{
     color:var(--bodyfontcolor);
     opacity: .85;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #171515;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #054861;
+}
+::-webkit-scrollbar-thumb {
+    background: #054861;
 }
 
 /* @media screen and (min-width: 1140px){
