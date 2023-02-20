@@ -24,6 +24,20 @@ header{
     color: var(--bodyfontcolor);
     border-bottom: .5rem solid #00000055;
 }
+.menubar{
+    background-color: #054861;
+    color: var(--bodyfontcolor);
+    border-bottom: .1rem solid #00000055;
+}
+
+.menubar a{
+    text-decoration: none;
+    color: var(--bodyfontcolor);
+}
+
+.menubar a:hover{
+    color: #069b8e;
+}
 
 body{
     background-color: var(--bodycolor);
@@ -38,6 +52,8 @@ body{
 .accordion-button, button.accordion-button::after,.accordion-collapse, button.collapsed::after{
     background-color: #22222299;
     color: var(--bodyfontcolor);
+    scroll-behavior: smooth;
+    cursor: pointer;
 }
 .accordion-button:focus, .accordion-button:not(.collapsed),.modal-header,.modal-footer,.modal-body{
     background-color: #222;

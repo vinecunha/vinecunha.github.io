@@ -81,7 +81,7 @@ document.getElementById('contact-form')
     });
 });
 
-
+//need to improve this
 function Eve() {
   const today = new Date();
   const targetDate = new Date('2022-10-17');
@@ -114,13 +114,28 @@ function Vinecunha() {
   
 }
 
+function hererightnow() {
+  const today = new Date();
+  const targetDate = new Date('2021-11-08');
+  
+  const diffTime = Math.abs(targetDate - today);
+  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
+  const diffYears = Math.floor(diffMonths / 12);
+  
+  const Div = document.getElementById('hererightnow');
+
+  return Div.innerText = `${diffYears} years and ${diffMonths % 12} months`;
+  
+}
+
 function Year() {
   const currentYear = new Date().getFullYear();
   const pElement = document.getElementById('year');
-  pElement.innerText = `${currentYear}`;
+  pElement.innerText = `v.3.0.0.3. ${currentYear}`;
 }
 
 
 window.addEventListener('load', Eve);
 window.addEventListener('load', Vinecunha);
+window.addEventListener('load', hererightnow);
 window.addEventListener('load', Year);

@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- library do fade AOS para animações no scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- library jsPDF -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script> <!-- library jsPDF -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     <link rel="stylesheet" media="all" href="./assets/css/hover-min.css"> <!--library do github hover.css para animações hover-->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -20,13 +23,13 @@
 
 </head>
 <body class="container-fluid p-0 m-0">
-    <header class="w-100 d-flex flex-xs-column flex-sm-column flex-md-column flex-lg-row ">
+    <header class="w-100 d-flex flex-column">
         <div id="header-title" class="container-fluid m-auto d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-center align-items-center p-2 m-2">
             <img src="./assets/images/IMG_0073-1.png" class="img-fluid">
             <div id="header-title-bio" class="d-flex flex-column justify-content-center align-items-between p-1 ms-1">
                 <h1 class="display-6">Vinicius Cunha Martins</h1>
                 <h4 class="ms-2"><i class="fa fa-code" style="font-weight: bolder;"></i> Jr. Front End</h4>
-                <p class="about ms-2 text-wrap text-break"><br/>👋 Hi! I’m @vinecunha ^_^ <br/>
+                <p class="about ms-2 text-wrap text-break" data-aos="fade-right" data-aos-duration="1000"><br/>👋 Hi! I’m @vinecunha ^_^ <br/>
                     👀 I’m interested in computer science and soccer<br/>
                     📚 I’m currently learning front-end skills and I'm graduating in Production Engeneering at UFF and Internet Systems at SENAC.<br/>
                     🔍 I’m looking for jobs on front-end projects. My current level is junior.<br/>
@@ -85,37 +88,28 @@
             </div>
         </div>
         <div id="main-content" class="container-lg d-flex flex-column">
-            <div id="main-aboutme" class="container-lg m-auto mt-5 mb-3">
+            <div id="main-aboutme" class="container-lg m-auto mt-5 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <h4>About me <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h4>
                 <p class="text-start">My name is Vinicius Martins, I am <span id="vinecunha"></span> and Eve's father, a beautiful baby girl with <span id="Eve"></span>. I've been working as IT support for over 5 years and I'm studying to migrate to the development area. I'm majoring in Internet Systems Technology and looking for openings in front-end development.</p>
             </div>
-            <div id="main-highlight" class="container-lg m-auto my-3">
+            <div id="main-highlight" class="container-lg m-auto my-3" data-aos="fade-up" data-aos-duration="1000">
                 <h4>Highlighted <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h4>
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <picture class="d-block w-100">
-                            <iframe src="./assets/images/AZ-900.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px"> </iframe>
-                            <div class="carousel-caption d-block">
-                                <a href="https://www.credly.com/users/vcmartins/badges" target="_blank" style="text-decoration: none; color: #fff"><p style="background-color: #054861; backdrop-filter: blur(10px);">View my verified achievement from <span style="font-weight: 900;">Microsoft</span></p></a>
-                            </div>
-                        </picture>
+                      <div class="carousel-item active mb-5" data-bs-interval="10000">
+                        <object data="./assets/images/AZ-900.pdf?#view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="./assets/images/AZ-900.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
-                        <picture class="d-block w-100">
-                            <iframe src="./assets/images/Business Intelligence Foundation - BIFPC.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px"> </iframe>
-                            <div class="carousel-caption d-block">
-                                <a href="https://www.credly.com/users/vcmartins/badges" target="_blank" style="text-decoration: none; color: #fff"><p style="background-color: #054861; backdrop-filter: blur(10px);">View my verified achievement from <span style="font-weight: 900;">CertiProf</span></p></a>
-                            </div>
-                        </picture>
+                        <object data="./assets/images/Business Intelligence Foundation - BIFPC.pdf?#view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="./assets/images/Business Intelligence Foundation - BIFPC.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
                       </div>
                       <div class="carousel-item">
-                        <picture class="d-block w-100">
-                            <iframe src="./assets/images/Scrum Foundation Professional Certificate - renovação.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px"> </iframe>
-                            <div class="carousel-caption d-block">
-                                <a href="https://www.credly.com/users/vcmartins/badges" target="_blank" style="text-decoration: none; color: #fff"><p style="background-color: #054861; backdrop-filter: blur(10px);">View my verified achievement from <span style="font-weight: 900;">CertiProf</span></p></a>
-                            </div>
-                        </picture>
+                        <object data="./assets/images/Scrum Foundation Professional Certificate - renovação.pdf?#view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="./assets/images/Scrum Foundation Professional Certificate - renovação.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -128,7 +122,7 @@
                     </button>
                   </div>
             </div>
-            <div id="main-content-accordion" class="accordion mx-1 my-3" id="accordionPanelsStayOpenExample" style="min-width: 75%;">
+            <div id="main-content-accordion" class="accordion mx-1 my-3" id="accordionPanelsStayOpenExample" style="min-width: 75%;" data-aos="fade-up" data-aos-duration="1000">
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style='font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome'>
@@ -138,7 +132,7 @@
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
                         <h5 class=" d-flex align-items-center ps-2" style='font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome'>&#xf141 DXC Technology <img src="./assets/images/dxctechnology.jpg" class="ms-auto image-fluid"></h5>
-                        <h6 class="from-to" style='font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome'>nov. 2021 &#xf054 at the moment</h6>
+                        <h6 class="from-to" style='font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome'><span id="hererightnow"></span> | nov. 2021 &#xf054 at the moment</h6>
                         <h6>• Position: Technical Solutions Rep I (On behalf of Itaú Unibanco)</h6>
                             
                         <h5 class=" d-flex align-items-center ps-2" style='font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome'>&#xf141 AFMED Hospitalar  <img src="./assets/images/user.png" class="ms-auto image-fluid"></h5>
@@ -621,7 +615,7 @@
         </div>
     </main>
     <section id="sub-main" class="my-5 py-3"> 
-        <div id="main-content-contact-form-alert" class="container-lg m-auto">
+        <div id="main-content-contact-form-alert" class="container-lg m-auto" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="send-email text-start mt-3">Send me a e-mail <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h3>
             <form id="contact-form" class="container-lg m-auto text-secondary">
                 <div class="row my-3">
@@ -636,13 +630,12 @@
                 </div>
                 <div class="row my-1">
                     <div class="form-floating mb-3">
-                        <input type="email" id="email" class="inputform form-control ps-3 border-0 text-secondary placeholder="email@email.com" value="email@email.com" aria-label="E-mail" aria-describedby="basic-addon1"  onfocus="this.value='';" onblur="this.value='email@email.com';">
-                        <label for="email" class="ms-3">Enter your best e-mail </label>
+                        <input type="email" id="email" class="inputform form-control ps-3 border-0 text-secondary" placeholder="email@email.com">
+                        <label for="email" class="ms-3">Enter your best e-mail, something like email@email.com </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-group">
-                        <span class="inputform input-group-text border-0 text-secondary">Message:</span>
                         <textarea id="mensagem" class="inputform form-control border-0 text-secondary" placeholder="Type a message for me" aria-label="With textarea" required></textarea>
                     </div>
                 </div>
@@ -669,7 +662,7 @@
             </div>
         </div>
     </section>
-    <footer class="container-lg d-flex flex-row justify-content-between align-items-center">
+    <footer class="container-lg d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <p class=" footer p-2 text-center" style="font-family: 'Archivo',sans-serif;"><i class="fa fa-code" style="font-weight: bolder; color:#adb5bd"></i> Developed with <i class="fa fa-coffee" style="font-weight: bolder; color:#054861;"></i> and <i class="fa fa-headphones" style="font-weight: bolder; color: #054861"></i> by <strong style="color: #054861;">vinecunha</strong>.</p>
         <p id="year" style="font-family: 'Archivo',sans-serif;"></p>
     </footer>
@@ -683,8 +676,10 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
       emailjs.init('zuPAcuW4RYA3sGiFz')
+      AOS.init();
     </script>
 </body>
 </html>
