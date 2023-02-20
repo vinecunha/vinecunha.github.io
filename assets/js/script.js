@@ -80,3 +80,47 @@ document.getElementById('contact-form')
       window.navigator.vibrate(500);
     });
 });
+
+
+function Eve() {
+  const today = new Date();
+  const targetDate = new Date('2022-10-17');
+  
+  const diffTime = Math.abs(targetDate - today);
+  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
+  const diffYears = Math.floor(diffMonths / 12);
+  
+  const EveDiv = document.getElementById('Eve');
+
+  if(diffYears <= 0 ){
+    return EveDiv.innerText = `${diffMonths % 12} months old`;
+  }else{
+    return EveDiv.innerText = `${diffYears} years and ${diffMonths % 12} months old`;
+  }
+  
+}
+
+function Vinecunha() {
+  const today = new Date();
+  const targetDate = new Date('1994-04-12');
+  
+  const diffTime = Math.abs(targetDate - today);
+  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
+  const diffYears = Math.floor(diffMonths / 12);
+  
+  const VinecunhaDiv = document.getElementById('vinecunha');
+
+  return VinecunhaDiv.innerText = `${diffYears} years old`;
+  
+}
+
+function Year() {
+  const currentYear = new Date().getFullYear();
+  const pElement = document.getElementById('year');
+  pElement.innerText = `${currentYear}`;
+}
+
+
+window.addEventListener('load', Eve);
+window.addEventListener('load', Vinecunha);
+window.addEventListener('load', Year);

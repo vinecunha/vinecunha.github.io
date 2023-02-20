@@ -60,7 +60,7 @@ h3.send-email{
     font-family: "Archivo",sans-serif;
 }
 
-div#main-highlight{
+div#main-highlight, div#main-aboutme{
     border-bottom: .3rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
