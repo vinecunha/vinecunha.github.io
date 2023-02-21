@@ -20,23 +20,9 @@
 html{scroll-behavior: smooth;}
 
 header{
-    background-image: radial-gradient(circle, #054861 0%, #13293d 100%);
     color: var(--bodyfontcolor);
-    border-bottom: .5rem solid #00000055;
-}
-.menubar{
-    background-color: #054861;
-    color: var(--bodyfontcolor);
-    border-bottom: .1rem solid #00000055;
-}
-
-.menubar a{
-    text-decoration: none;
-    color: var(--bodyfontcolor);
-}
-
-.menubar a:hover{
-    color: #069b8e;
+    border-bottom: .1rem solid;
+    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 body{
@@ -68,8 +54,13 @@ h1,h4,legend{
     font-family: 'Archivo', sans-serif;
 }
 
-h5:not(.modal-title){
+h5:not(.modal-title,.lead){
     background-color: #19191977;
+}
+
+h6#mybadges{
+    border-top: .1rem solid;
+    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 h3.send-email{
@@ -81,7 +72,7 @@ div#main-highlight, div#main-aboutme{
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
-section#sub-main{
+section#sub-main-form{
     background-color: #171515;
     border-top: .3rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
@@ -105,17 +96,6 @@ footer{
     color: var(--bodyfontcolor);
 }
 
-header img{
-    max-width: 15rem;
-    max-height: 15rem;
-    margin: 2% 1%;
-    border-radius: 50% !important;
-    overflow: hidden;
-    background-color: #fff;
-    border: 0.2rem solid var(--headerfontcolor);
-    vertical-align:middle;
-}
-
 main img{
     max-width: 3rem;
     max-height: 3rem;
@@ -125,6 +105,10 @@ main img{
     background-color: #fff;
     border: 0.25rem solid var(--bodycolor);
     vertical-align:middle;
+}
+
+main #badges img{
+    border: .15rem solid var(--bodyfontcolor);
 }
 
 header .socials{
