@@ -20,9 +20,8 @@
 html{scroll-behavior: smooth;}
 
 header{
+    background-image: linear-gradient(to bottom,  #010d11, #111);
     color: var(--bodyfontcolor);
-    border-bottom: .1rem solid;
-    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 body{
@@ -68,13 +67,13 @@ h3.send-email{
 }
 
 div#main-highlight, div#main-aboutme{
-    border-bottom: .3rem solid;
+    border-bottom: .1rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 section#sub-main-form{
     background-color: #171515;
-    border-top: .3rem solid;
+    border-top: .1rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
@@ -88,17 +87,12 @@ form button#button:hover{
 }
 
 footer{
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    margin-bottom: 0;
-    background-color: var(--bodycolor);
     color: var(--bodyfontcolor);
 }
 
 main img{
-    max-width: 3rem;
-    max-height: 3rem;
+    width: 3rem;
+    height: 3rem;
     margin: 1%;
     border-radius: 50% !important;
     overflow: hidden;
