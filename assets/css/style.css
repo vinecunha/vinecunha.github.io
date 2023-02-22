@@ -20,7 +20,7 @@
 html{scroll-behavior: smooth;}
 
 header{
-    background-image: linear-gradient(to bottom,  #010d11, #111);
+    background-image: linear-gradient(to bottom,  #021e27, #111);
     color: var(--bodyfontcolor);
 }
 
@@ -57,11 +57,6 @@ h5:not(.modal-title,.lead){
     background-color: #19191977;
 }
 
-h6#mybadges{
-    border-top: .1rem solid;
-    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
-}
-
 h3.send-email{
     font-family: "Archivo",sans-serif;
 }
@@ -78,6 +73,10 @@ section#sub-main-form{
 }
 
 form button#button{
+    background-color: #171515;
+    color: var(--bodyfontcolor);
+    border: .15rem solid;    
+    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
     transition: background-color 1s;
     transition-timing-function: ease-in-out;
 }
@@ -105,16 +104,16 @@ main #badges img{
     border: .15rem solid var(--bodyfontcolor);
 }
 
-header .socials{
+.socials{
     display: flex;
     flex-direction: row;
 }
 
-header .socials a{
+.socials a{
     text-transform: none;
     text-decoration: none;
     font-size: 1.2rem;
-    margin: .5rem .5rem 0 .5rem;
+    margin: 0 .5rem 0 0;
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     color: var(--headerfontcolor);
 }
@@ -126,7 +125,7 @@ body #aside-main a{
     color: var(--headerfontcolor);
 }
 
-header .socials a:hover{
+.socials a:hover{
     color: var(--headercolorhover);
     -webkit-transition: all .5s ease-in;
     -moz-transition: all .5s ease-in;
