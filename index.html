@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="theme-color" content="#171515"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="#171515"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="#171515"/>
+    <meta name="theme-color" content="#021e27"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#021e27"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#021e27"/>
     <title></> @vinecunha // Portfólio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -600,8 +600,8 @@
             
         </div>
     </main>
-    <section id="sub-main-form" class="my-5 py-3"> 
-        <div id="main-content-contact-form-alert" class="container-lg m-auto needs-validation" data-aos="fade-up" data-aos-duration="1000">
+    <section id="sub-main-form" class="container-fluid d-flex flex-column flex-lg-row my-5 py-3 align-items-center justify-content-between"> 
+        <div id="sub-main-content-contact-form-alert" class="container m-auto needs-validation" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="send-email text-start mt-3">Send me an e-mail <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h3>
             <form id="contact-form" class="container-lg m-auto text-secondary">
                 <div class="row my-3">
@@ -647,15 +647,16 @@
                 <div id="alert-msg"></div>
             </div>
         </div>
+        <div id="sub-main-content-qr-code" class="me-5">
+            <h3 class="send-email text-start mt-3">My Whatsapp <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h3>
+            <picture>
+                <!-- <source srcset="./assets/images/QR-Code-Whatsapp.jpg" type="image/svg+xml"> -->
+                <img src="./assets/images/QR-Code-Whatsapp.png" alt="My Whatsapp QR Code">
+            </picture>
+        </div>
     </section>
     <footer class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-center">
-        <nav>
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/images/white-logo-trevo.png" alt="" width="100" height="50">
-              </a>
-            </div>
-        </nav>
+        <p style="font-family: 'Archivo',sans-serif;">Developed by @vinecunha.</p>
         <p id="year" style="font-family: 'Archivo',sans-serif;"></p>
     </footer>
     <script src="./assets/js/script.js"></script>

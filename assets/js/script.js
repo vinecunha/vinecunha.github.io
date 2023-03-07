@@ -131,7 +131,7 @@ function hererightnow() {
 function Year() {
   const currentYear = new Date().getFullYear();
   const pElement = document.getElementById('year');
-  pElement.innerText = `v.4.0.1.0. © ${currentYear}`;
+  pElement.innerText = `v.4.0.1.1. © ${currentYear}`;
 }
 
 
