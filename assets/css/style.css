@@ -100,10 +100,6 @@ main img{
     vertical-align:middle;
 }
 
-main #badges img{
-    border: .15rem solid var(--bodyfontcolor);
-}
-
 .socials{
     display: flex;
     flex-direction: row;
