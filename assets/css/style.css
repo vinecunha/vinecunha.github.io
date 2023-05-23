@@ -5,6 +5,13 @@
         --bodycolor:#111;
         --headerfontcolor: #f0f0f0;
         --bodyfontcolor: #e2e2e2;
+        --gradient-color1: #021e27;
+        --gradient-color2: #111;
+        --accordion-background-color: #22222299;
+        --input-form-bgcolor: #22222299;
+        --accordion-button-bgcolor: #222;
+        --h5-background-color: #19191977;
+        --main-form-bgcolor: #171515;
     
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     font-size: 1rem;
@@ -20,33 +27,44 @@
 html{scroll-behavior: smooth;}
 
 header{
-    background-image: linear-gradient(to bottom,  #021e27, #111);
+    background-image: linear-gradient(to bottom,  var(--gradient-color1), var(--gradient-color2));
     color: var(--bodyfontcolor);
 }
-
+#darkLightMode{
+    font-family: FontAwesome;
+    font-weight: 400;
+    color: #f5f5f5;
+}
 body{
     background-color: var(--bodycolor);
     color: var(--bodyfontcolor);
 }
-
+.input-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/lightbulbon_121975.svg');
+    background-size: cover;
+    color: #fff;
+}
 .accordion-item{
     border: 1.5px solid #222;
-    background-color: #22222299;
+    background-color: var(--accordion-background-color);
     color: var(--bodyfontcolor);
 }
 .accordion-button, button.accordion-button::after,.accordion-collapse, button.collapsed::after{
-    background-color: #22222299;
+    background-color: var(--accordion-background-color);
     color: var(--bodyfontcolor);
     scroll-behavior: smooth;
     cursor: pointer;
 }
 .accordion-button:focus, .accordion-button:not(.collapsed),.modal-header,.modal-footer,.modal-body{
-    background-color: #222;
-    color: var(--bodyfontcolor);
+    background-color: var(--accordion-button-bgcolor);
+    color: #f5f5f5;
 }
 
 .inputform{
-    background-color: #22222299;
+    background-color: var(--input-form-bgcolor);
 }
 
 h1,h4,legend{
@@ -54,7 +72,7 @@ h1,h4,legend{
 }
 
 h5:not(.modal-title,.lead){
-    background-color: #19191977;
+    background-color: var(--h5-background-color);
 }
 
 h3.send-email{
@@ -67,13 +85,13 @@ div#main-highlight, div#main-aboutme{
 }
 
 section#sub-main-form{
-    background-color: #171515;
+    background-color: var(--main-form-bgcolor);
     border-top: .1rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
 
 form button#button{
-    background-color: #171515;
+    background-color: var(--main-form-bgcolor);
     color: var(--bodyfontcolor);
     border: .15rem solid;    
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
@@ -83,6 +101,7 @@ form button#button{
 
 form button#button:hover{
     background-color: #054861;
+    color: #f5f5f5;
 }
 
 footer{
@@ -172,20 +191,3 @@ button.hardskills:hover{
 ::-webkit-scrollbar-thumb {
     background: #054861;
 }
-
-/* @media screen and (min-width: 1140px){
-    
-}
-@media screen and (min-width:600px) and (max-width: 1140px){
-   
-}
-
-@media screen and (max-width: 600px){
-    main{
-        width: 100vw;
-        flex-direction: column !important;
-    }
-}
-
-@media screen and (min-width: 200px) and (max-width: 300px){
-} */
