@@ -164,13 +164,13 @@ function hererightnow() {
   const Div = document.getElementById('hererightnow');
 
   return Div.innerText = `${diffYears} years and ${diffMonths % 12} months`;
-  
+
 }
 
 function Year() {
   const currentYear = new Date().getFullYear();
   const pElement = document.getElementById('year');
-  pElement.innerText = `v.4.0.1.4. © ${currentYear}`;
+  pElement.innerText = `v.4.0.1.6. © ${currentYear}`;
 }
 
 

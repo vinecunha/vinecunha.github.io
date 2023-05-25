@@ -13,11 +13,8 @@
         --h5-background-color: #19191977;
         --main-form-bgcolor: #171515;
     
-    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
-    font-size: 1rem;
-    font-weight: normal;
-    background-color: var(--bodycolor);
-}              
+        --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    }              
 *{
     margin: 0;
     padding: 0;
