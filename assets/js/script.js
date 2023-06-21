@@ -120,52 +120,25 @@ document.getElementById('contact-form')
     });
 });
 
-//need to improve this
-function Eve() {
+function calculateAge(targetDate, elementId) {
   const today = new Date();
-  const targetDate = new Date('2022-10-17');
-  
+
   const diffTime = Math.abs(targetDate - today);
   const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
   const diffYears = Math.floor(diffMonths / 12);
-  
-  const EveDiv = document.getElementById('Eve');
 
-  if(diffYears <= 0 ){
-    return EveDiv.innerText = `${diffMonths % 12}-month-old`;
-  }else{
-    return EveDiv.innerText = `${diffYears} year and ${diffMonths % 12} months old`;
+  const element = document.getElementById(elementId);
+
+  if (diffYears <= 0) {
+    element.innerText = `${diffMonths % 12}-month-old`;
+  } else {
+    element.innerText = `${diffYears} year and ${diffMonths % 12} months old`;
   }
-  
 }
 
-function Vinecunha() {
-  const today = new Date();
-  const targetDate = new Date('1994-04-12');
-  
-  const diffTime = Math.abs(targetDate - today);
-  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
-  const diffYears = Math.floor(diffMonths / 12);
-  
-  const VinecunhaDiv = document.getElementById('vinecunha');
-
-  return VinecunhaDiv.innerText = `${diffYears} years old`;
-  
-}
-
-function hererightnow() {
-  const today = new Date();
-  const targetDate = new Date('2021-11-08');
-  
-  const diffTime = Math.abs(targetDate - today);
-  const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
-  const diffYears = Math.floor(diffMonths / 12);
-  
-  const Div = document.getElementById('hererightnow');
-
-  return Div.innerText = `${diffYears} years and ${diffMonths % 12} months`;
-
-}
+calculateAge(new Date('2022-10-17'), 'Eve');
+calculateAge(new Date('1994-04-12'), 'vinecunha');
+calculateAge(new Date('2021-11-08'), 'hererightnow');
 
 function Year() {
   const currentYear = new Date().getFullYear();

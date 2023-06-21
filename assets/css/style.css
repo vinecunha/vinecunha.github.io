@@ -96,11 +96,9 @@ form button#button{
     transition-timing-function: ease-in-out;
 }
 
-form button#button:hover{
-    background-color: #054861;
-    color: #f5f5f5;
+.card{
+    background-color: var(--accordion-background-color);
 }
-
 footer{
     color: var(--bodyfontcolor);
 }
@@ -137,12 +135,6 @@ body #aside-main a{
     color: var(--headerfontcolor);
 }
 
-.socials a:hover{
-    color: var(--headercolorhover);
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-}
 
 main .card-itens{
     margin: .5rem 0;
@@ -173,10 +165,6 @@ button.hardskills{
     color: var(--bodyfontcolor);
     font-size: .8rem;
 }
-button.hardskills:hover{
-    color:var(--bodyfontcolor);
-    opacity: .85;
-}
 
 ::-webkit-scrollbar-track {
     background-color: #171515;
@@ -187,4 +175,21 @@ button.hardskills:hover{
 }
 ::-webkit-scrollbar-thumb {
     background: #054861;
+}
+@media (hover: hover){
+    form button#button:hover{
+        background-color: #054861;
+        color: #f5f5f5;
+    }
+
+    button.hardskills:hover{
+        color:var(--bodyfontcolor);
+        opacity: .85;
+    }
+    .socials a:hover{
+        color: var(--headercolorhover);
+        -webkit-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        transition: all .5s ease-in;
+    }
 }
