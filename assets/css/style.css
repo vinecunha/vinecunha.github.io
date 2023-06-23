@@ -98,9 +98,13 @@ form button#button, .btn{
     transition: background-color 1s;
     transition-timing-function: ease-in-out;
 }
-.card-body a.btn:visited{
+.card-body a.btn:active{
         background-color: #054861;
         color: #f5f5f5;
+}
+.card-body a.btn:visited{
+    background-color: inherit;
+    color: inherit;
 }
 .card{
     background-color: var(--accordion-background-color);
