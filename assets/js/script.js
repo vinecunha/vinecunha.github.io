@@ -130,9 +130,9 @@ function calculateAge(targetDate, elementId) {
   const element = document.getElementById(elementId);
 
   if (diffYears <= 0) {
-    element.innerText = `${diffMonths % 12}-month-old`;
+    element.innerText = `${diffMonths % 12}-month`;
   } else {
-    element.innerText = `${diffYears} year and ${diffMonths % 12} months old`;
+    element.innerText = `${diffYears} year and ${diffMonths % 12} months`;
   }
 }
 
