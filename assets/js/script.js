@@ -13,13 +13,13 @@ document.getElementById('changeColorBtn').addEventListener('click', function() {
     // Modo Dark (valor original)
     document.documentElement.style.setProperty('--headercolor', '#13293d');
     document.documentElement.style.setProperty('--headercolorhover', '#069b8e');
-    document.documentElement.style.setProperty('--bodycolor', '#1B2240');
+    document.documentElement.style.setProperty('--bodycolor', '#111');
     document.documentElement.style.setProperty('--headerfontcolor', '#f0f0f0');
     document.documentElement.style.setProperty('--bodyfontcolor', '#e2e2e2');
     document.documentElement.style.setProperty('--gradient-color1', '#021e27');
     document.documentElement.style.setProperty('--gradient-color2', '#111');
-    document.documentElement.style.setProperty('--accordion-background-color', '##292F4D');
-    document.documentElement.style.setProperty('--input-form-bgcolor', '#292F4D');
+    document.documentElement.style.setProperty('--accordion-background-color', '#22222299');
+    document.documentElement.style.setProperty('--input-form-bgcolor', '#22222299');
     document.documentElement.style.setProperty('--accordion-button-bgcolor', '#222');
     document.documentElement.style.setProperty('--h5-background-color', '#19191977');
     document.documentElement.style.setProperty('--main-form-bgcolor', '#171515');
