@@ -119,8 +119,8 @@ main img{
     margin: 1%;
     border-radius: 50% !important;
     overflow: hidden;
-    background-color: #fff;
-    border: 0.25rem solid var(--bodycolor);
+    /* background-color: #fff; */
+    border: 0.25rem solid #00000000;
     vertical-align:middle;
 }
 
