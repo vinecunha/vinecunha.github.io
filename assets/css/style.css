@@ -64,26 +64,20 @@ body{
     background-color: var(--input-form-bgcolor);
 }
 
-h1,h4,legend{
+:is(h1,h4,legend, h3.send-email){
     font-family: 'Archivo', sans-serif;
 }
 
-h5:not(.modal-title,.lead){
+h5,h6 :not(.modal-title,.lead, .from-to){
     background-color: var(--h5-background-color);
+    font-weight: 400;
 }
 
-h3.send-email{
-    font-family: "Archivo",sans-serif;
-}
-
-div#main-highlight, div#main-aboutme{
+div :where(#main-highlight, #main-aboutme), section :where(#portfolio){
     border-bottom: .1rem solid;
     border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
 }
-#portfolio{
-    border-top: .1rem solid;
-    border-image: radial-gradient(circle, #054861 0%, #13293d 100%) 1;
-}
+
 section#sub-main-form{
     background-color: var(--main-form-bgcolor);
     border-top: .1rem solid;
@@ -119,7 +113,6 @@ main img{
     margin: 1%;
     border-radius: 50% !important;
     overflow: hidden;
-    /* background-color: #fff; */
     border: 0.25rem solid #00000000;
     vertical-align:middle;
 }
@@ -129,7 +122,7 @@ main img{
     flex-direction: row;
 }
 
-.socials a{
+:is(.socials, body #aside-main) a{
     text-transform: none;
     text-decoration: none;
     font-size: 1.2rem;
@@ -137,43 +130,14 @@ main img{
     font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
     color: var(--headerfontcolor);
 }
-body #aside-main a{
-    font-size: 1rem;
-    text-transform: none;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
-    color: var(--headerfontcolor);
-}
-
 
 main .card-itens{
     margin: .5rem 0;
     border-bottom: 1px solid var(--border);
 }
-main .card p::selection, main .card-itens h2::selection, main .card-itens h3::selection, main .card-itens h4::selection, main .card-itens h5::selection, main .card-itens i::selection, main .card a::selection{
+main .card :where(p::selection, a::selection), main .card-itens :where(h2::selection,  h3::selection, h4::selection, h5::selection, i::selection){
     background: var(--headercolorhover);
     color: var(--headerfontcolor);
-}
-
-main .competencias{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:start;
-    margin: .5rem;
-    padding: .5rem;
-    border-bottom:1px dashed var(--border);
-}
-
-h6:not(.from-to){
-    font-weight: 400;
-}
-
-button.hardskills{
-    background-color: var(--headercolor);
-    color: var(--bodyfontcolor);
-    font-size: .8rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -186,6 +150,7 @@ button.hardskills{
 ::-webkit-scrollbar-thumb {
     background: #054861;
 }
+
 @media (hover: hover){
     form button#button:hover, .btn:hover{
         background-color: #054861;
