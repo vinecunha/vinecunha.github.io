@@ -68,7 +68,7 @@ body{
     font-family: 'Archivo', sans-serif;
 }
 
-h5,h6 :not(.modal-title,.lead, .from-to){
+:is(h5,h6) :not(.modal-title,.lead, .from-to){
     background-color: var(--h5-background-color);
     font-weight: 400;
 }
