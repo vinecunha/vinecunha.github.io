@@ -34,7 +34,7 @@ document.getElementById('changeColorBtn').addEventListener('click', function() {
     document.documentElement.style.setProperty('--headerfontcolor', '#111111');
     document.documentElement.style.setProperty('--gradient-color2', '#fafafa');
     document.documentElement.style.setProperty('--accordion-background-color', '#eeeeee99');
-    document.documentElement.style.setProperty('--accordion-button-bgcolor', '#13293d');
+    document.documentElement.style.setProperty('--accordion-button-bgcolor', '#ccc');
     document.documentElement.style.setProperty('--h5-background-color', '#E6E6E677');
     document.documentElement.style.setProperty('--main-form-bgcolor', '#d8d8d8');
     document.documentElement.style.setProperty('--input-form-bgcolor', '#fff');
