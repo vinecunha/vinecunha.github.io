@@ -146,7 +146,6 @@ function Year() {
   pElement.innerText = `v.4.0.1.11. © ${currentYear}`;
 }
 
-
 window.addEventListener('load', Eve);
 window.addEventListener('load', Vinecunha);
 window.addEventListener('load', hererightnow);

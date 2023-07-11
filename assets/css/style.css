@@ -95,7 +95,7 @@ form button#button, .btn{
     transition-timing-function: ease-in-out;
 }
 .card-body a.btn:active{
-        background-color: #054861;
+        background-color: var(--bg-scrollbar);
         color: var(--headerfontcolor);
 }
 .card-body a.btn:visited{
