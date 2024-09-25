@@ -24,7 +24,16 @@
 }
 
 html{scroll-behavior: smooth;}
-
+.flag {
+    width: 20px; /* Ajuste o tamanho das bandeiras conforme necessário */
+    cursor: pointer;
+    margin: 0 5px;
+    filter: grayscale(100%); /* Aplica o efeito em preto e branco */
+    transition: filter 0.3s; /* Transição suave */
+}
+.flag.active {
+    filter: none; /* Remove o efeito quando a bandeira está ativa */
+}
 header{
     background-image: linear-gradient(to bottom,  var(--gradient-color1), var(--gradient-color2));
     color: var(--bodyfontcolor);

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#021e27"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#021e27"/>
+    <title>@vinecunha || CV & Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/114d145b08.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- library do fade AOS para animações no scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- library jsPDF -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script> <!-- library jsPDF -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+    <link rel="stylesheet" media="all" href="../assets/css/hover-min.css"> <!--library do github hover.css para animações hover-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+</head>
+<body class="container-fluid p-0 m-0">
+    <header class="container-fluid m-auto d-flex flex-column justify-content-between align-items-between p-2 m-2">
+        
+        <div class="w-100 d-flex flex-row align-items-center justify-content-end form-check form-switch">
+            <div class="me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" 
+                     alt="Inglês" class="flag" 
+                     onclick="window.location.href='../en/index.html'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" 
+                     alt="Português" class="flag active" 
+                     onclick="window.location.href='../pt/index.html'">
+            </div>
+            <input class="m-1 form-check-input" type="checkbox" id="changeColorBtn">
+            <label class="m-1 form-check-label" id="darkLightMode" for="changeColorBtn">&#xf0eb</label>
+        </div>
+        <div class="container d-flex flex-row justify-content-between align-items-center">
+            <div id="row">
+                <h1 class="display-5">Olá! Eu sou o Vinicius Martins<span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h1>
+                <h5 class="lead">Desenvolvedor Fullstack | AZ900 | OCI 2022 & 2023 | OCDM 2023</h5>
+                <div class="socials">
+                    <a href="https://www.credly.com/users/vcmartins" class="hvr-wobble-vertical px-1" target="blank" data-bs-toggle="tooltip" data-bs-placement="left" title="My Certifications">&#xf058</a>
+                    <a href="https://linkedin.com/in/vcmartins" class="hvr-wobble-vertical px-1" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin Profile">&#xf0e1</a>
+                    <a href="https://github.com/vinecunha" class="hvr-wobble-vertical px-1" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github Profile">&#xf09b</a>
+                    <a href="https://wa.me/5521979820741?text=Olá,%20Vinicius%20Cunha%20Martins!%20Vi%20seu%20currículo%20online.%20Podemos%20conversar?" class="hvr-wobble-vertical px-1" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Send me a message on Whatsapp">&#xf232</a>
+                    <a href="mailto:vcunha@id.uff.br" class="hvr-wobble-vertical px-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Send me a email">&#xf0e0</a>
+                    <a href="../assets/credenciais/CV-ViniciusCunhaMartins.pdf" class="hvr-hang px-1" download="CV - Vinicius Cunha Martins.pdf" target="blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Download my resume">&#xf019</a>
+                </div>
+            </div>
+            <picture>
+                <source srcset="../assets/images/IMG_0073-3.png" type="image/svg+xml">
+                <img src="../assets/images/IMG_0073-3.png" class="img-fluid" alt="My profile"/>
+            </picture>
+        </div>
+    </header>
+    <main class="container-lg d-flex flex-column flex-lg-row">
+        <aside id="aside-main" class="mt-3 d-flex flex-column" style="min-width: 25%;">
+            <div id='aside-main-row1' class="m-1 d-flex flex-row flex-lg-column justify-content-between">
+                <div class="address my-3 mx-1">
+                    <h6 class="lead mb-4">
+                        <strong>Meu objetivo:</strong> Desenvolvedor Front/Back ou FullStack Junior
+                    </h6>                                        
+                    <h6> 
+                        🌎 Rio de Janeiro, BR
+                    </h6>
+                </div>    
+                <div class="contacts my-3 mx-1" style="min-width: 50%">
+                    <h6 class="lead" style="font-weight: bold; font-family: 'Archivo',sans-serif;">Meus <wbr/>contatos:</h6>
+                    <a href="tel: 21979820741" class="hvr-icon-grow-rotate" style="text-decoration: none; ">📱 +55 (21) 97982-0741</a><br/>
+                    <a href="mailto:vcunha@id.uff.br" class="hvr-icon-spin" style="text-decoration: none; ">📫 vcunha<wbr/>@id.uff.br</a><br/>
+                    <a href="mailto:vcunha@id.uff.br" class="hvr-icon-spin" style="text-decoration: none; ">📫 v.cunhamartins<wbr/>@icloud.com</a><br/>
+                </div>
+            </div>
+            <div id='aside-main-row2' class="m-1 d-flex flex-row flex-lg-column justify-content-between">
+                <div class="hobbies my-3 mx-1" style="min-width: 50%">
+                    <h6 class="lead" style="font-weight: bold; font-family: 'Archivo',sans-serif;">Meus Hobbies:</h6>
+                    <p class="m-0" style='font-family: var(--font-family);'>&#xf120 Desenvolvimento Web</p>
+                    <p class="m-0" style='font-family: var(--font-family);'>&#xf1e3 Assistir partidas de futebol</p>
+                    <p class="m-0" style='font-family: var(--font-family);'>&#xf072 Viajar pelo mundo</p>
+                    <p class="m-0" style='font-family: var(--font-family);'>&#xf21c Andar de motocicleta</p>
+                </div>
+                <div class="skills my-3 mx-1" style="min-width: 50%">
+                    <h6 class="lead" style="font-weight: bold; font-family: 'Archivo',sans-serif;">Minhas Skills:</h6>
+                    <p class="m-0" style="font-family: var(--font-family);">HTML5<br/> &#xf005 &#xf005 &#xf005 &#xf005 &#xf005</p>
+                    <p class="m-0" style="font-family: var(--font-family);">CSS3<br/> &#xf005 &#xf005 &#xf005 &#xf005 &#xf005</p>
+                    <p class="m-0" style="font-family: var(--font-family);">JavaScript<br/> &#xf005 &#xf005 &#xf005 &#xf005</p>
+                    <p class="m-0" style="font-family: var(--font-family);">Bootstrap<br/> &#xf005 &#xf005 &#xf005 &#xf089</p>
+                    <p class="m-0" style="font-family: var(--font-family);">React<br/> &#xf005 &#xf005 &#xf005</p>
+                    <p class="m-0" style="font-family: var(--font-family);">PrimeReact<br/> &#xf005 &#xf005 &#xf005</p>
+                </div>
+            </div>
+        </aside>
+        <div id="main-content" class="container-lg d-flex flex-column">
+            <div id="main-aboutme" class="container-lg m-auto mt-5 mb-3">
+                <h4>Sobre Mim <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h4>
+                <p class="text-start">Meu nome é Vinicius Martins. Eu tenho <span id="vinecunha"></span> anos e sou pai de uma linda menina de <span id="Eve"></span> ano de idade. Tenho 7 anos de experiência em suporte de TI e sou graduado em tecnologia de Sistemas para Internet. Estou em busca de vagas em desenvolvimento frontend, backend ou fullstack.</p>
+                <div id="badges" class="my-3">
+                    <h6 id="mybadges" class="w-50 pt-3">Minhas certificações <span style="color:#054861; font-weight: 900; font-size: 1rem;">.__</span></h6>
+                    <a href="https://www.credly.com/badges/75b581e9-3f6d-4d7c-8535-415286c31e7b?source=linked_in_profile" target="blank"><img src="../assets/images/microsoft-certified-azure-fundamentals.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge AZ-900" data-bs-original-title="Certification Badge AZ-900" width="40" height="40"></a>
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B4FAE39F3DCD42D575540C5FDE82B6675231D2F42D215BCF83D073C060597799" target="blank"><img src="../assets/images/OCIF2023CA.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge OCI 2023" data-bs-original-title="Certification Badge OCI 2023" width="40" height="40"></a>
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=93C1E9BA9671E020EE6107F09CABD8D98B3CB488222639E9B203D57CB82791CD" target="blank"><img src="../assets/images/OCIF2022CA.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge OCI 2022" data-bs-original-title="Certification Badge OCI 2022" width="40" height="40"></a>
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=A524D36F6EB38AD9D02BF5D4C2D9F93262A814A47E806333B91059BA62A1AD0F" target="blank"><img src="../assets/images/OCDMF2023.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge OCDM 2023" data-bs-original-title="Certification Badge OCDM 2023" width="40" height="40"></a>
+                    <a href="https://www.apollographql.com/tutorials/certifications/adf9b9db-b346-4b8a-9ac6-368d87257d0f" target="blank"><img src="../assets/images/graphdeveloper.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge Graph Developer" data-bs-original-title="Certification Badge Graph Developer" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/ae977e78-f5e5-414f-88a6-b0de450b7cc8/public_url" target="blank"><img src="../assets/images/introduction-to-iot.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge Introduction to IOT" data-bs-original-title="Certification Badge Introduction to IOT" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/0596aee5-05b4-4bc1-a13b-a08ed0b9206a/public_url" target="blank"><img src="../assets/images/ibm-cloud-essentials.2.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge IBM Cloud" data-bs-original-title="Certification Badge IBM Cloud" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/75545051-3d0b-4941-810d-9756d2f77e48/public_url" target="blank"><img src="../assets/images/data-science-for-business-level-1.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge Data Science for Business" data-bs-original-title="Certification Badge Data Science for Business" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/6174e836-504b-44f9-8a22-bab5ed0cd082/public_url" target="blank"><img src="../assets/images/scrum-foundation-professional-certificate-sfpc.1.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge SFPC" data-bs-original-title="Certification Badge SFPC" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/fa8c3ff3-867e-4632-a76e-91787ad568ce/public_url" target="blank"><img src="../assets/images/business-intelligence-foundation-professional-certification-bifpc.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge BIFPC" data-bs-original-title="Certification Badge BIFPC" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/cede72a7-d0c4-4acf-afef-028d7f4b7c7e/public_url" target="blank"><img src="../assets/images/remote-worker-professional-certificate-rwpc.1.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge RWPC" data-bs-original-title="Certification Badge RWPC" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/dd15d4de-2ccf-41de-b69e-3ed67bb09df4/public_url" target="blank"><img src="../assets/images/fundamentos-na-lei-geral-de-protecao-de-dados-lgpdf.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge LGPDF" data-bs-original-title="Certification Badge LGDPF" width="40" height="40"></a>
+                    <a href="https://www.credly.com/badges/285fdb53-06d7-43dc-81b3-a50252b71369/public_url" target="blank"><img src="../assets/images/lifelong-learning.png" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Certification Badge LLL" data-bs-original-title="Certification Badge LLL" width="40" height="40"></a>
+                </div> 
+            </div>
+            <div id="main-highlight" class="container-lg m-auto my-3">
+                <h4>Destaques <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h4>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active mb-5" data-bs-interval="10000">
+                        <object data="../assets/images/AZ-900.pdf?#view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="../assets/images/AZ-900.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
+                      </div>
+                      <div class="carousel-item mb-5" data-bs-interval="5000">
+                        <object data="../assets/images/OCI 23 - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="../assets/images/OCI 23 - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
+                      </div>
+                      <div class="carousel-item mb-5" data-bs-interval="5000">
+                        <object data="../assets/images/OCI - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="../assets/images/OCI - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
+                      </div>
+                      <div class="carousel-item mb-5" data-bs-interval="5000">
+                        <object data="../assets/images/OCDM 23 - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="../assets/images/OCDM 23 - Vinicius Cunha Martins.pdf?view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
+                      </div>
+                      <div class="carousel-item mb-5" data-bs-interval="5000">
+                        <object data="../assets/images/Scrum Foundation Professional Certificate - renovação.pdf?#view=fit&toolbar=0" type="application/pdf" class="d-block" width="100%" height="375px">
+                            <embed src="../assets/images/Scrum Foundation Professional Certificate - renovação.pdf?#view=fit&toolbar=0" class="container-sm mb-3" height="375px">
+                        </object>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div id="main-content-accordion" class="accordion mx-1 my-3" id="accordionPanelsStayOpenExample" style="min-width: 75%;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-family: var(--font-family);">
+                        <span class="lead">&#xf036 Experiências Profissionais <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.</span></span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 DXC Technology <img src="../assets/images/dxctechnology.jpg" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);"><span id="hererightnow"></span> anos | nov. 2021 &#xf054 até o momento</h6>
+                        <h6>• Cargo: Analista de Serviços de Infraestrutura e TI III (A serviço do Itaú Unibanco)</h6>
+                            
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 AFMED Hospitalar  <img src="../assets/images/user.png" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);">2 anos e 3 meses | mai. 2018 &#xf054 jul. 2020</h6>
+                        <h6>• Cargo: Analista Administrativo</h6>
+                        <h6>• Cargo: Assistente Administrativo</h6>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Atento Brasil S.A.  <img src="../assets/images/atento.png" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);">2 anos e 7 meses | nov. 2014 &#xf054 mai. 2017</h6>
+                        <h6>• Cargo: Customer Order Management (A serviço da TIM Brasil)</h6>
+                                        
+                        <h6>• Cargo: Operador de Suporte Técnico III (A serviço da Live TIM)</h6>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-family: var(--font-family);">
+                        <span class="lead">&#xf19d Formação Acadêmica <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.</span></span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Tecnólogo em Sistemas para Internet  <img src="../assets/images/senac.png" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);">ago. 2021 &#xf054 dez. 2023</h6>                    
+                        <h6>Centro Universitário SENAC-SP</h6>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Graduação Bacharel em Engenharia de Produção - <i class="ms-2">Em andamento</i>  <img src="../assets/images/uff.png" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);">ago. 2019 &#xf054 dez. 2025 <i>(prev.)</i></h6>
+                        <h6>Universidade Federal Fluminense - UFF</h6>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141  Ensino Médio/Técnico - Informática <img src="../assets/images/csm.jpg" class="ms-auto image-fluid"></h5>
+                        <h6 class="from-to" style="font-family: var(--font-family);">jan. 2009 &#xf054 dez. 2011 </h6>
+                        <h6>Colégio Santa Maria</h6>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-family: var(--font-family);">
+                        <span class="lead">&#xf19d Cursos Extracurriculares - Certificações <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.</span></span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Microsoft Certified: Azure Fundamentals<img src="../assets/images/microsoft-certified-azure-fundamentals.png" class="ms-auto image-fluid"></h5>
+                        <h6>jul. 2022</h6>
+                        <h6>Microsoft - Nota: 728</h6>
+                        <p>Credencial: I346-6410<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/75b581e9-3f6d-4d7c-8535-415286c31e7b?source=linked_in_profile" target="blank">Validar</a></p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Oracle Cloud Infrastructure 2022 Certified Foundations Associate<img src="../assets/images/OCIF2022CA.png" class="ms-auto image-fluid"></h5>
+                        <h6>abr. 2023</h6>
+                        <h6>Oracle - Pass Score: 76%</h6>
+                        <p>Credencial: 19160134OCIF2022CA<br>
+                            Verifique a autenticidade: <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=93C1E9BA9671E020EE6107F09CABD8D98B3CB488222639E9B203D57CB82791CD" target="blank">Validar</a></p>
+                        
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Oracle Cloud Infrastructure 2023 Certified Foundations Associate<img src="../assets/images/OCIF2023CA.png" class="ms-auto image-fluid"></h5>
+                        <h6>jul. 2023</h6>
+                        <h6>Oracle - Pass Score: 85,7%</h6>
+                        <p>Credencial: 302747091OCIF2023CA<br>
+                            Verifique a autenticidade: <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B4FAE39F3DCD42D575540C5FDE82B6675231D2F42D215BCF83D073C060597799" target="blank">Validar</a></p>
+                        
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Oracle Cloud Data Management 2023 Certified Foundations Associate<img src="../assets/images/OCDMF2023.png" class="ms-auto image-fluid"></h5>
+                        <h6>jul. 2023</h6>
+                        <h6>Oracle - Pass Score: 83,6%</h6>
+                        <p>Credencial: 302747091OCDMF2023<br>
+                            Verifique a autenticidade: <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=A524D36F6EB38AD9D02BF5D4C2D9F93262A814A47E806333B91059BA62A1AD0F" target="blank">Validar</a></p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Apollo Graph Developer - Associate<img src="../assets/images/graphdeveloper.png" class="ms-auto image-fluid"></h5>
+                        <h6>jun. 2023</h6>
+                        <p>Credencial: adf9b9db-b346-4b8a-9ac6-368d87257d0f<br>
+                            Verifique a autenticidade: <a href="https://www.apollographql.com/tutorials/certifications/adf9b9db-b346-4b8a-9ac6-368d87257d0f" target="blank">Validar</a></p>
+        
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 IBM Cloud Essentials<img src="../assets/images/ibm-cloud-essentials.2.png" class="ms-auto image-fluid"></h5>
+                        <h6>fev. 2023</h6>
+                        <h6>IBM</h6>
+                        <p>Credencial: 3390e70e7b5d4f65b11c5f417e7274c0<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/0596aee5-05b4-4bc1-a13b-a08ed0b9206a/linked_in_profile" target="blank">Validar</a>
+                        </p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Data Science for Business - Level 1<img src="../assets/images/data-science-for-business-level-1.png" class="ms-auto image-fluid"></h5>
+                        <h6>fev. 2023</h6>
+                        <h6>IBM</h6>
+                        <p>Credencial: dc4fd4f5a1654dc39ac69585e790f4d6<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/75545051-3d0b-4941-810d-9756d2f77e48/linked_in_profile" target="blank">Validar</a>
+                        </p>
+                            
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Scrum Foundation Professional Certificate SFPC™<img src="../assets/images/scrum-foundation-professional-certificate-sfpc.1.png" class="ms-auto image-fluid"></h5>
+                        <h6>fev. 2023</h6>
+                        <h6>CertiProf</h6>
+                        <p>Credencial: 83068670<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/6174e836-204b-44f9-8a22-bab5ed0cd082/public_url" target="blank">Validar</a>
+                        </p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Business Intelligence Foundation Professional Certification - BIFPC™<img src="../assets/images/business-intelligence-foundation-professional-certification-bifpc.png" class="ms-auto image-fluid"></h5>
+                        <h6>fev. 2023</h6>
+                        <h6>CertiProf</h6>
+                        <p>Credencial: 83055093<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/fa8c3ff3-867e-4632-a76e-91787ad568ce/public_url" target="blank">Validar</a>
+                        </p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Fundamentos na Lei Geral de Proteção de Dados - LGPDF™<img src="../assets/images/fundamentos-na-lei-geral-de-protecao-de-dados-lgpdf.png" class="ms-auto image-fluid"></h5>
+                        <h6>abr. 2023</h6>
+                        <h6>CertiProf</h6>
+                        <p>Credencial: 84944113<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/dd15d4de-2ccf-41de-b69e-3ed67bb09df4/public_url" target="blank">Validar</a>
+                        </p>
+
+                        <h5 class=" d-flex align-items-center ps-2" style="font-family: var(--font-family);">&#xf141 Remote Worker Professional Certificate - RWPC™<img src="../assets/images/remote-worker-professional-certificate-rwpc.1.png" class="ms-auto image-fluid"></h5>
+                        <h6>fev. 2023</h6>
+                        <h6>CertiProf</h6>
+                        <p>Credencial: 83169050<br>
+                            Verifique a autenticidade: <a href="https://www.credly.com/badges/cede72a7-d0c4-4acf-afef-028d7f4b7c7e/public_url" target="blank">Validar</a>
+                        </p>
+
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Big Data Interpretation</h5>
+                        <h6>jul. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 09680e70-67fb-4226-930c-cb48aa2255a9<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/09680e70-67fb-4226-930c-cb48aa2255a9" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Cloud Transition: Adopting & Moving to Cloud & Multi-cloud Environments</h5>
+                        <h6>jul. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 2c9d5e79-d3c9-4248-969e-03a0893aa14f#gs.6frsxy<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/2c9d5e79-d3c9-4248-969e-03a0893aa14f#gs.6frsxy" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 FSD Front-End Development: Using JavaScript Functions</h5>
+                        <h6>mar. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: f4391db4-e119-4272-bc89-9227f9439402<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/f4391db4-e119-4272-bc89-9227f9439402" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 FSD Front-End Development: Writing Code with jQuery</h5>
+                        <h6>mar. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 06352810-8dd8-4efd-bc7b-72fcb9db2c35<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/06352810-8dd8-4efd-bc7b-72fcb9db2c35" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 FSD Front-end Development: Advanced CSS Browser Features</h5>
+                        <h6>mar. 2022</h6>
+                        <h6>SkillSoft</h5>
+                        <p>Credencial: df5b07b3-8d57-4e07-8c31-72ab9f9ac389#gs.vk9vxt<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/df5b07b3-8d57-4e07-8c31-72ab9f9ac389#gs.vk9vxt" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 FSD Front-end Development: Features of HTML5 & CSS3</h5>
+                        <h6>mar. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 5e11daef-3a8d-498d-a875-0ad207b1e0be<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/5e11daef-3a8d-498d-a875-0ad207b1e0be" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Big Data Fundamentals</h5>
+                        <h6>jan. 2022</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 538d2a76-e2bc-4574-bf15-ef7556b50d58<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/538d2a76-e2bc-4574-bf15-ef7556b50d58" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 ITIL® 4 Foundation: Introduction</h5>
+                        <h6>dez. 2021</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 0346dcb8-ce42-42c3-a5bf-6b39a5d93e76#gs.j14khr<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/0346dcb8-ce42-42c3-a5bf-6b39a5d93e76#gs.j14khr" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Expert Insights on Personal Productivity</h5>
+                        <h6>nov. 2021</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: d2933e2e-8697-46d3-8630-58452b592543<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/d2933e2e-8697-46d3-8630-58452b592543" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Expert Insights on Time Management</h5>
+                        <h6>nov. 2021</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: 29f91338-7bc4-4bd4-b098-d7ea8016a2b9#gs.g8p1r9<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/29f91338-7bc4-4bd4-b098-d7ea8016a2b9#gs.g8p1r9" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Introduction to Agile</h5>
+                        <h6>nov. 2021</h6>
+                        <h6>SkillSoft</h6>
+                        <p>Credencial: df45ff85-8cac-4654-87c4-a3e5e477bc26<br>
+                            Verifique a autenticidade: <a href="https://SkillSoft.digitalbadges.SkillSoft.com/df45ff85-8cac-4654-87c4-a3e5e477bc26" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Hiring Coders #2 - Treinamento Desenv. Full Stack</h5>
+                        <h6>jul. 2021</h6>
+                        <h6>Gama Academy / VTEX / AWS</h6>
+                        <p>Credencial: <a href="../assets/credenciais/Certificado-ViniciusCunhaMartins.pdf" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 PCAP: Programming Essentials In Python</h5>
+                        <h6>nov. 2020</h6>
+                        <h6>Cisco Networking Academy - OpenEDG Python Institute</h6>
+                        <p>Credential: <a href="../assets/credenciais/ViniciusMartins-PCAPProgramming-certificate.pdf" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 Introduction to Python</h5>
+                        <h6>nov. 2020</h6>
+                        <h6>ALFAHELIX - Escola de Computação</h6>
+                        <p>Credential: Y657JH<br>
+                            Verifique a autenticidade: <a href="https://alfahelix.com.br/certificados/" target="blank">Validar</a>
+                        </p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 INTRODUCTION TO IOT</h5>
+                        <h6>abr. 2020</h6>
+                        <h6>SENAC SP - CISCO NETACAD</h6>
+                        <p>Credencial: <a href="https://www.credly.com/badges/ae977e78-f5e5-414f-88a6-b0de420b7cc8" target="blank">Validar</a></p>
+                    
+                        <h5 class=" ps-2" style="font-family: var(--font-family);">&#xf141 GET CONNECTED</h5>
+                        <h6>abr. 2020</h6>
+                        <h6>SENAC SP - CISCO NETACAD</h6>
+                        <p>Credencial: <a href="../assets/credenciais/ViniciusMartins-GetConnected-certificate.pdf" target="blank">Validar</a></p>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-family: var(--font-family);">
+                        <span class="lead">&#xf036 Hard Skills <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.</span>
+                            <!-- <span class="badge badge-success" style="color: #c40b0b">new 1</span> -->
+                        </span>
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <div class="card-itens competencias">
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropAZ900">
+                                AZ-900 <i style="font-family: var(--font-family);">&#xf058</i>                            
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropAZ900" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Microsoft Azure Fundamentals - AZ-900</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Azure Fundamentals exam is an opportunity to prove knowledge of cloud concepts, Azure services, Azure workloads, security and privacy in Azure, as well as Azure pricing and support. Candidates should be familiar with the general technology concepts, including concepts of networking, storage, compute, application support, and application development.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropOCI">
+                                OCI <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropOCI" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Oracle Cloud Infrastructure 2022 Certified Foundations Associate</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            A certificação Foundations da Oracle Cloud Infrastructure (OCI) é destinada a indivíduos que desejam demonstrar conhecimento fundamental sobre os serviços de nuvem pública fornecidos pela Oracle Cloud Infrastructure (OCI). Esta certificação é voltada para candidatos com formações não técnicas, como aqueles envolvidos na venda ou aquisição de soluções em nuvem, além de profissionais com formação técnica que desejam validar seu conhecimento em nível básico sobre os principais serviços da OCI.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropOCDM">
+                                OCDM <i style="font-family: var(--font-family);">&#xf058</i>
+                                <!-- <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                    <span class="visually-hidden">New alerts</span>
+                                </span> -->
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropOCDM" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Oracle Cloud Data Management 2023 Certified Foundations Associate</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            A certificação Foundations em Gestão de Dados da Oracle é destinada a indivíduos que buscam demonstrar conhecimento fundamental sobre os serviços de gestão de dados fornecidos pela Oracle. Esta certificação é voltada para candidatos com formações não técnicas, como aqueles envolvidos na venda ou aquisição de soluções em nuvem, além de profissionais com formação técnica que desejam validar seu conhecimento em nível básico sobre os principais serviços de Gestão de Dados da Oracle. Este exame não requer experiência técnica prática e não é pré-requisito para a obtenção de outras certificações da Oracle.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropIBMCloud">
+                                IBM Cloud Essentials <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropIBMCloud" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">IBM Cloud Essentials</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            O curso introduz a plataforma IBM Cloud, abordando tópicos como locais de data centers e a configuração de gerenciamento de identidade e acesso. Descobrimos as diversas opções de Infraestrutura como Serviço (IaaS) disponíveis na IBM Cloud e aprendemos sobre as opções de implantação, incluindo tópicos como Contêineres, Kubernetes e OpenShift. Também nos familiarizamos com os serviços da IBM Cloud, como Bancos de Dados, Inteligência Artificial e Watson, Blockchain, Internet das Coisas, entre outros.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropDSF">
+                                Data Science for Business <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropDSF" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Data Science for Business</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Você tem os dados, tem as habilidades, e um colega pede para você hackear uma senha. O que você faz? Sua decisão é ética? Este curso foi criado para mantê-lo em conformidade com as leis de privacidade atuais e orientá-lo em um caminho para evitar problemas.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button tton type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropSFPC">
+                                SFPC <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropSFPC" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Scrum Foundation Professional Certificate - SFPC™</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Os detentores do Certificado Profissional em Fundamentos do Scrum desenvolveram habilidades de nível básico em Scrum que endossam seu conhecimento fundamental nesse framework. Eles demonstraram compreensão dos pilares empíricos do Scrum: transparência, inspeção e adaptação. Seu foco principal está no trabalho do Sprint para alcançar o melhor progresso possível em relação a esses objetivos.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropBIFPC">
+                                BIFPC <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropBIFPC" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Business Intelligence Foundation Professional Certification - BIFPC™</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Os titulares da Certificação Profissional em Fundamentos de BI possuem um conhecimento básico em Business Intelligence. Eles conhecem a História, o Processo de Implementação, a Arquitetura e os tipos de Análise de BI. Eles são capazes de entender os conceitos de business intelligence e como desenvolver visualizações e conhecimento de dados para tomar melhores decisões de negócios.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropRWPC">
+                                RWPC <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropRWPC" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Remote Worker Professional Certificate - RWPC™</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Os titulares do Certificado Profissional de Trabalho Remoto estão cientes e muito atentos às práticas, ferramentas e técnicas aceitas mundialmente para realizar o trabalho remoto, reconhecendo que a experiência remota pode ser gerida de maneira mais eficiente e com um alto grau de sustentabilidade. Eles possuem conhecimento das melhores práticas para um trabalho remoto produtivo e bem-sucedido.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropLGPF">
+                                LGPDF <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropLGPF" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Fundamentos Na Lei Geral De Proteção De Dados - LGPDF™</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            O titular deste badge validou suas habilidades e conhecimentos em Fundamentos na Lei Geral de Proteção de Dados. Ele demonstra uma ampla familiarização com a lei que regula o tratamento de dados pessoais, mesmo em meios digitais, por uma pessoa natural ou jurídica, sob a égide do direito público ou privado. Ele comprovou ter um conhecimento aprofundado da lei e seu impacto nas instituições, usuários e na sociedade.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropLLL">
+                                LLL <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropLLL" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Lifelong Learning</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Candidatos que demonstraram seu compromisso inabalável com o aprendizado contínuo, que é vitais no mundo digital em constante mudança e expansão de hoje. Isso também identifica as qualidades de uma mente aberta, disciplinada e em constante evolução, capaz de usar e contribuir com conhecimento para desenvolver um mundo mais igualitário e melhor.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1" data-bs-toggle="modal" data-bs-target="#staticBackdropGraph">
+                                GraphQL <i style="font-family: var(--font-family);">&#xf058</i>
+                            </button>
+
+                            <div class="modal fade" id="staticBackdropGraph" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-sm-start" id="staticBackdropLabel">Apollo GraphQL Developer - Associate</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-sm-start">
+                                            Desenvolvedores que obtêm esta certificação possuem um sólido conhecimento fundamental de GraphQL e da suíte de ferramentas Apollo para projetar um schema, executar um Apollo Server 4 e realizar consultas com o Apollo Client 3 no frontend.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Azure Fundamentals
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Azure Cloud
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Oracle Cloud
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                HTML5
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                CSS3
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                SASS
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                PHP
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                JavaScript
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                TypeScript
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                React.js
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                PrimeReact
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Node.js
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                GraphQL
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Git
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Github
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Python
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                C++
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Java
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Agile
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Scrum                     
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                DevOps                  
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Business Intelligence                      
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                BI                 
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Data Science                  
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Big Data                       
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                AWS Cloud Practitioner Essentials                      
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                VTEX IO                         
+                            </button>
+                        </div>
+                        <div class="card-itens competencias">
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Microsoft Office 365                     
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Microsoft Office 2016                           
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Excel                   
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Outlook                    
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Power BI                         
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Word                    
+                            </button>
+                            <button type="button" class="badge rounded bg-secondary border-0 position-relative px-1 m-1">
+                                Power Point                    
+                            </button>
+                        </div>
+                        <h4 class="w-100 ms-0">Idiomas:</h4>
+                        <div class="container-sm ms-0 ps-3 my-3">
+                            <h6>Português</h6>
+                            <div class="progress w-100 mb-1">
+                                <div class="progress-bar" role="progressbar" style="background-color: #13293d;width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Fluent</div>
+                            </div>
+                            <h6>Espanhol</h6>
+                            <div class="progress w-100 mb-1">
+                                <div class="progress-bar" role="progressbar" style="background-color: #13293d;width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Advanced</div>
+                            </div>
+                            <h6>Inglês</h6>
+                            <div class="progress w-100 mb-1">
+                                <div class="progress-bar" role="progressbar" style="background-color: #13293d;width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>              
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-family: var(--font-family);">
+                        <span class="lead">&#xf129 Outros <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.</span></span>
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        
+                        <p>        
+                            Publiquei um artigo sobre INCLUSÃO DIGITAL NAS ESCOLAS na revista EDU.TEC Revista Científica Digital da FAETEC - V. 2, N. 1, p.121 (2013) <a href="http://www.faetec.rj.gov.br/images/revistas/pdf_edutec/edutec_2013-2.pdf" target="blank">Veja mais</a> <br/><br/>
+                            Desenvolvi um Workshop sobre Desenvolvimento de Jogos em Scratch na X Jornada Acadêmica da FAETERJ - PARACAMBI em agosto de 2015. <br/>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="portfolio" class="container-lg mt-4 d-flex flex-column justify-content-between align-items-center">
+        <h3 class="send-email w-100 text-start my-4">Meus projetos <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h3>
+        <div class="container-lg d-flex flex-column flex-lg-row justify-content-between align-items-stretch">
+            <div class="card mx-3 mb-3" style="max-width: 540px;">
+                <img src="../assets/images/portfolio-gorjeta.png" class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">SplitBill+</h5>
+                    <p class="card-text">O SplitBill+ é um aplicativo simples desenvolvido em React que ajuda a dividir a conta em um restaurante entre várias pessoas. O aplicativo oferece duas opções de divisão: igual e por consumo. Além disso, permite calcular a gorjeta a ser incluída na conta.</p>
+                    <div class="my-3">
+                        <span class="badge rounded bg-secondary text-dark">PrimeReact</span>
+                        <span class="badge rounded bg-secondary text-dark">Bootstrap</span>
+                        <span class="badge rounded bg-secondary text-dark">CSS3</span>
+                        <span class="badge rounded bg-secondary text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://vinecunha-gorjeta.netlify.app" target="_blank" class="btn">Visitar</a>
+                </div>
+            </div>
+            <div class="card mx-3 mb-3" style="max-width: 540px;">
+                <img src="../assets/images/portfolio-quiz.png" class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Quiz</h5>
+                    <p class="card-text">Este projeto desenvolveu um Quiz de Tecnologia. O Quiz exibe aleatoriamente 30 perguntas e imediatamente mostra se a resposta do usuário está correta ou errada após a escolha. O projeto foi desenvolvido usando React e Bootstrap.</p>
+                    <div class="my-3">
+                        <span class="badge rounded bg-secondary text-dark">ReactJS</span>
+                        <span class="badge rounded bg-secondary text-dark">Bootstrap</span>
+                        <span class="badge rounded bg-secondary text-dark">ShuffleArray</span>
+                        <span class="badge rounded bg-secondary text-dark">CSS3</span>
+                        <span class="badge rounded bg-secondary text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://vinecunha-quiz.netlify.app" target="_blank" class="btn ">Visitar</a>
+                </div>
+            </div>
+            <div class="card mx-3 mb-3" style="max-width: 540px;">
+                <img src="../assets/images/portfolio-cep.png" class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">CEP</h5>
+                    <p class="card-text">Este é um aplicativo simples de consulta de CEP desenvolvido em React. Ele permite que o usuário insira um CEP válido e obtenha informações sobre o endereço correspondente.</p>
+                    <div class="my-3">
+                        <span class="badge rounded bg-secondary text-dark">PrimeReact</span>
+                        <span class="badge rounded bg-secondary text-dark">Bootstrap</span>
+                        <span class="badge rounded bg-secondary text-dark">API</span>
+                        <span class="badge rounded bg-secondary text-dark">CSS3</span>
+                        <span class="badge rounded bg-secondary text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://vinecunha-cep.netlify.app" target="_blank" class="btn">Visitar</a>
+                </div>
+            </div>
+            <div class="card mx-3 mb-3" style="max-width: 540px;">
+                <img src="../assets/images/portfolio-login.png" class="img-fluid rounded-start" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Login</h5>
+                    <p class="card-text">Este é um projeto em React que apresenta um sistema de login e uma página inicial, utilizando React Router e componentes do PrimeReact.</p>
+                    <div class="my-3">
+                        <span class="badge rounded bg-secondary text-dark">PrimeReact</span>
+                        <span class="badge rounded bg-secondary text-dark">Bootstrap</span>
+                        <span class="badge rounded bg-secondary text-dark">React-Router</span>
+                        <span class="badge rounded bg-secondary text-dark">CSS3</span>
+                        <span class="badge rounded bg-secondary text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://vinecunha-login.netlify.app" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sub-main-form" class="container-fluid d-flex flex-column flex-lg-row my-3 py-3 align-items-center justify-content-between"> 
+        <div id="sub-main-content-contact-form-alert" class="container-lg  m-auto needs-validation" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="send-email text-start mt-3">Entre em contato <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h3>
+            <form id="contact-form" class="container-lg m-auto text-secondary">
+                <div class="row my-3">
+                    <div class="col form-floating">
+                        <input type="text" id="nome" class="inputform form-control border-0 text-secondary" placeholder="First Name" aria-label="First Name" required>
+                        <label for="nome" class="ms-3 form-label">Nome</label>
+                    </div>
+                    <div class="col form-floating">
+                        <input type="text" id="sobrenome" class="inputform form-control border-0 text-secondary" placeholder="Last Name" aria-label="Last Name">
+                        <label for="sobrenome" class="ms-3 form-label">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="row my-1">
+                    <div class="form-floating mb-3">
+                        <input type="email" id="email" class="inputform form-control ps-3 border-0 text-secondary" placeholder="email@email.com">
+                        <label for="email" class="ms-3 form-label">email@email.com</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <textarea id="mensagem" class="inputform form-control border-0 text-secondary" placeholder="Escreva sua mensagem para mim" aria-label="With textarea" required></textarea>
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <button type="submit" id="button" class="container p-2 m-auto d-flex flex-row align-items-center justify-content-center">
+                        Enviar Messagem
+                    </button>
+                </div>
+            </form>
+            <div id="alert">
+                <!-- svg alert -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </symbol>
+                    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                    </symbol>
+                    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </symbol>
+                </svg>
+                <div id="alert-msg"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-lg d-flex flex-column justify-content-between align-items-center">
+        <div class="container-lg d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <div class="w-100 d-flex flex-column justify-content-start align-items-start">
+                <h4>Conecte-se à mim <span style="color:#054861; font-weight: 900; font-size: 1.3rem;">.__</span></h4>
+                <section class="w-100 d-flex flex-row justify-content-start align-items-start">
+                    <a href="https://www.twitter.com/vinecunha1" class="px-1 link-secondary" target="blank" data-bs-toggle="tooltip" data-bs-placement="left" title="My personal Twitter profile">Twitter</a> |
+                    <a href="https://linkedin.com/in/vcmartins" class="px-1 link-secondary" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="My Linkedin profile">Linkedin</a> |
+                    <a href="https://github.com/vinecunha" class="px-1 link-secondary" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="My Github profile">GitHub</a> |
+                    <a href="https://wa.me/5521979820741?text=Olá,%20Vinicius%20Cunha%20Martins!%20Vi%20seu%20currículo%20online.%20Podemos%20conversar?" class="px-1 link-secondary" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Send me a message on Whatsapp">Whatsapp</a> |
+                    <a href="mailto:vcunha@id.uff.br" class="px-1 link-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Send me an email">E-mail</a>
+                </section>
+            </div>
+            <blockquote class="w-100 blockquote fst-italic text-end my-3">
+                <p class="mb-3">Faça o que você faz tão bem</br> que eles vão querer ver novamente</br> e trazer seus amigos.</p>
+                <footer class="blockquote-footer">Wall Disney</footer>
+            </blockquote>
+        </div>
+        <div id="sub-footer" class="mt-5 container-fluid d-flex flex-row justify-content-between align-items-center" >
+            <p style="font-family: 'Archivo',sans-serif;">Desenvolvido por @vinecunha. </br> Feito em <span style="color: #6610f2">Bootstrap</span>.</p>
+            <p id="year" style="font-family: 'Archivo',sans-serif;"></p>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      emailjs.init('zuPAcuW4RYA3sGiFz')
+      AOS.init();
+    </script>
+</body>
+</html>
