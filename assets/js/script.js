@@ -132,7 +132,7 @@ function calculateAge(targetDate, elementId) {
   if (diffYears <= 0) {
     element.innerText = `${diffMonths % 12}-month`;
   } else {
-    element.innerText = `${diffYears} year and ${diffMonths % 12} months`;
+    element.innerText = `${diffYears} years`;
   }
 }
 
